@@ -1,5 +1,5 @@
 {
-   "abstract" : "It's new $module",
+   "abstract" : "Nephia plugin that provides automated fill-in-form feature",
    "author" : [
       "ytnobody <ytnobody@gmail.com>"
    ],

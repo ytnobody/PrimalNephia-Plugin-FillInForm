@@ -1,6 +1,6 @@
 # NAME
 
-Nephia::Plugin::FillInForm - It's new $module
+Nephia::Plugin::FillInForm - Nephia plugin that provides automated fill-in-form feature
 
 # SYNOPSIS
 
@@ -19,9 +19,11 @@ Nephia::Plugin::FillInForm - It's new $module
         };
     };
 
-# DESCRIPTION
+# COMMAND
 
-Nephia::Plugin::FillInForm is ...
+## suppress\_fillin
+
+Suppress fill-in-form feature when rendering.
 
 # LICENSE
 

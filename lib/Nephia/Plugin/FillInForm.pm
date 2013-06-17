@@ -34,7 +34,7 @@ __END__
 
 =head1 NAME
 
-Nephia::Plugin::FillInForm - It's new $module
+Nephia::Plugin::FillInForm - Nephia plugin that provides automated fill-in-form feature
 
 =head1 SYNOPSIS
 
@@ -52,9 +52,11 @@ Nephia::Plugin::FillInForm - It's new $module
         };
     };
 
-=head1 DESCRIPTION
+=head1 COMMAND
 
-Nephia::Plugin::FillInForm is ...
+=head2 suppress_fillin
+
+Suppress fill-in-form feature when rendering.
 
 =head1 LICENSE
 
