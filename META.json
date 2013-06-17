@@ -54,5 +54,16 @@
       }
    },
    "release_status" : "unstable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/ytnobody/Nephia-Plugin-FillInForm/issues"
+      },
+      "homepage" : "https://github.com/ytnobody/Nephia-Plugin-FillInForm",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/ytnobody/Nephia-Plugin-FillInForm.git",
+         "web" : "https://github.com/ytnobody/Nephia-Plugin-FillInForm"
+      }
+   },
    "version" : "0.01"
 }

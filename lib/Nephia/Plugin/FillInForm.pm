@@ -3,7 +3,6 @@ use 5.008005;
 use strict;
 use warnings;
 use HTML::FillInForm;
-use Data::Dumper::Concise;
 
 our $VERSION = "0.01";
 our $RENDERER = \&{'Nephia::Core::render'};
