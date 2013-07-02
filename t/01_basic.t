@@ -16,7 +16,7 @@ test_psgi $app, sub {
     my $uri = URI->new('/'); 
     $uri->query_form(name => 'ytnobody', message => 'ohayoujo!');
     my $res = $cb->(GET $uri->as_string);
-    like $res->content, qr|<input value="ytnobody" name="name"><input value="ohayoujo!" name="message">|;
+    like $res->content, qr/<input(?: (?:value="ytnobody"|name="name")){2}><input(?: (?:value="ohayoujo!"|name="message")){2}>/;
 };
 
 test_psgi $app, sub {
