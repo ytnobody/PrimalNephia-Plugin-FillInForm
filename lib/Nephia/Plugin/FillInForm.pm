@@ -3,23 +3,20 @@ use 5.008005;
 use strict;
 use warnings;
 use HTML::FillInForm;
+use Nephia::DSLModifier;
 
 our $VERSION = "0.01";
-our $RENDERER = \&{'Nephia::Core::render'};
+our $RENDERER = origin 'render';
 
-sub import {
-    no strict 'refs';
-    *{'Nephia::Core::render'} = *Nephia::Plugin::FillInForm::render;
-}
-
-sub render {
-    my $req = &Nephia::Core::req();
-    my $res = $RENDERER->(shift);
-    my $body = $res->[2][0];
+around render => sub {
+    my ($response, $orig) = @_;
+    my $req    = origin('req')->();
+    my $res    = $orig->($response);
+    my $body   = $res->[2][0];
     my $params = $req->parameters->as_hashref;
     $res->[2][0] = HTML::FillInForm->fill(\$body, $params);
     return $res;
-}
+};
 
 sub suppress_fillin ($) {
     my $params = shift;

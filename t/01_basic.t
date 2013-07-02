@@ -10,7 +10,6 @@ use URI;
 
 my $psgi = File::Spec->catfile(dirname(__FILE__), 'test.psgi');
 my $app = Plack::Util::load_psgi($psgi);
-use Data::Dumper;
 
 test_psgi $app, sub {
     my $cb = shift;

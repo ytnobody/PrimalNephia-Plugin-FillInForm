@@ -43,7 +43,8 @@
       "runtime" : {
          "requires" : {
             "HTML::FillInForm" : "0",
-            "Nephia" : "0.11",
+            "Nephia" : "0.22",
+            "Nephia::DSLModifier" : "0",
             "perl" : "5.008005"
          }
       },
