@@ -5,7 +5,7 @@ use warnings;
 use HTML::FillInForm;
 use Nephia::DSLModifier;
 
-our $VERSION = "0.01";
+our $VERSION = "0.02";
 our $RENDERER = origin 'render';
 
 around render => sub {

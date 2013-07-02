@@ -2,6 +2,9 @@ Revision history for Perl extension Nephia-Plugin-FillInForm
 
 {{$NEXT}}
 
+0.02 2013-07-02T08:03:37Z
+    - test fix : for hash randomization in perl 5.18.0 or later [syohex]
+
 0.01 2013-07-02T03:22:47Z
 
     - original version

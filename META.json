@@ -66,5 +66,8 @@
          "web" : "https://github.com/ytnobody/Nephia-Plugin-FillInForm"
       }
    },
-   "version" : "0.01"
+   "version" : "0.02",
+   "x_contributors" : [
+      "Syohei YOSHIDA <syohex@gmail.com>"
+   ]
 }
