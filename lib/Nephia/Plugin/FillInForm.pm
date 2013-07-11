@@ -5,8 +5,10 @@ use warnings;
 use HTML::FillInForm;
 use Nephia::DSLModifier;
 
-our $VERSION = "0.02";
+our $VERSION = "0.03";
 our $RENDERER = origin 'render';
+
+our @EXPORT = qw/ suppress_fillin /;
 
 around render => sub {
     my ($response, $orig) = @_;
