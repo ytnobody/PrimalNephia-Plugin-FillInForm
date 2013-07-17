@@ -3,26 +3,34 @@ use 5.008005;
 use strict;
 use warnings;
 use HTML::FillInForm;
-use Nephia::DSLModifier;
+use Nephia::Request;
 
 our $VERSION = "0.03";
-our $RENDERER = origin 'render';
 
 our @EXPORT = qw/ suppress_fillin /;
 
-around render => sub {
-    my ($response, $orig) = @_;
-    my $req    = origin('req')->();
-    my $res    = $orig->($response);
-    my $body   = $res->[2][0];
-    my $params = $req->parameters->as_hashref;
-    $res->[2][0] = HTML::FillInForm->fill(\$body, $params);
-    return $res;
-};
+sub process_env {
+    my $env = shift;
+    my $req = Nephia::Request->new($env);
+    context(req => $req);
+    return $env;
+}
+
+sub process_content {
+    my $raw_content = shift;
+    my $content;
+    unless ( my $is_suppress = context('suppress_fillin') ) {
+        my $req     = context('req');
+        my $params  = $req->parameters->as_hashref;
+        $content = HTML::FillInForm->fill(\$raw_content, $params);
+    }
+    return $content || $raw_content;
+}
 
 sub suppress_fillin ($) {
     my $params = shift;
-    return $RENDERER->($params);
+    context(suppress_fillin => 1);
+    return $params;
 }
 
 1;
