@@ -1,5 +1,5 @@
 {
-   "abstract" : "Nephia plugin that provides automated fill-in-form feature",
+   "abstract" : "PrimalNephia plugin that provides automated fill-in-form feature",
    "author" : [
       "ytnobody <ytnobody@gmail.com>"
    ],
@@ -12,7 +12,7 @@
       "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
       "version" : "2"
    },
-   "name" : "Nephia-Plugin-FillInForm",
+   "name" : "PrimalNephia-Plugin-FillInForm",
    "no_index" : {
       "directory" : [
          "t",
@@ -43,7 +43,7 @@
       "runtime" : {
          "requires" : {
             "HTML::FillInForm" : "0",
-            "Nephia" : "0.34",
+            "PrimalNephia" : "0.34",
             "perl" : "5.008005"
          }
       },
@@ -56,13 +56,13 @@
    "release_status" : "unstable",
    "resources" : {
       "bugtracker" : {
-         "web" : "https://github.com/ytnobody/Nephia-Plugin-FillInForm/issues"
+         "web" : "https://github.com/ytnobody/PrimalNephia-Plugin-FillInForm/issues"
       },
-      "homepage" : "https://github.com/ytnobody/Nephia-Plugin-FillInForm",
+      "homepage" : "https://github.com/ytnobody/PrimalNephia-Plugin-FillInForm",
       "repository" : {
          "type" : "git",
-         "url" : "git://github.com/ytnobody/Nephia-Plugin-FillInForm.git",
-         "web" : "https://github.com/ytnobody/Nephia-Plugin-FillInForm"
+         "url" : "git://github.com/ytnobody/PrimalNephia-Plugin-FillInForm.git",
+         "web" : "https://github.com/ytnobody/PrimalNephia-Plugin-FillInForm"
       }
    },
    "version" : "0.04",

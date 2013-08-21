@@ -1,12 +1,12 @@
-Revision history for Perl extension Nephia-Plugin-FillInForm
+Revision history for Perl extension PrimalNephia-Plugin-FillInForm
 
 {{$NEXT}}
 
 0.04 2013-07-17T01:59:00Z
-    - refactor : respond for Nephia-0.34
+    - refactor : respond for PrimalNephia-0.34
 
 0.03 2013-07-11T04:15:28Z
-    - refactor : respond for Nephia-0.31
+    - refactor : respond for PrimalNephia-0.31
 
 0.02 2013-07-02T08:03:37Z
     - test fix : for hash randomization in perl 5.18.0 or later [syohex]

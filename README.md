@@ -1,10 +1,10 @@
 # NAME
 
-Nephia::Plugin::FillInForm - Nephia plugin that provides automated fill-in-form feature
+PrimalNephia::Plugin::FillInForm - PrimalNephia plugin that provides automated fill-in-form feature
 
 # SYNOPSIS
 
-    use Nephia plugin => ['FillInForm'];
+    use PrimalNephia plugin => ['FillInForm'];
     path '/' => sub {
         +{
             template => 'form.html',

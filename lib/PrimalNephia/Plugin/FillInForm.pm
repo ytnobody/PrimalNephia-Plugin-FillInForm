@@ -1,9 +1,9 @@
-package Nephia::Plugin::FillInForm;
+package PrimalNephia::Plugin::FillInForm;
 use 5.008005;
 use strict;
 use warnings;
 use HTML::FillInForm;
-use Nephia::Request;
+use PrimalNephia::Request;
 
 our $VERSION = "0.04";
 
@@ -11,7 +11,7 @@ our @EXPORT = qw/ suppress_fillin /;
 
 sub process_env {
     my $env = shift;
-    my $req = Nephia::Request->new($env);
+    my $req = PrimalNephia::Request->new($env);
     context(req => $req);
     return $env;
 }
@@ -40,11 +40,11 @@ __END__
 
 =head1 NAME
 
-Nephia::Plugin::FillInForm - Nephia plugin that provides automated fill-in-form feature
+PrimalNephia::Plugin::FillInForm - PrimalNephia plugin that provides automated fill-in-form feature
 
 =head1 SYNOPSIS
 
-    use Nephia plugin => ['FillInForm'];
+    use PrimalNephia plugin => ['FillInForm'];
     path '/' => sub {
         +{
             template => 'form.html',

@@ -23,8 +23,8 @@ my %args = (
         'Module::Build' => 0.38,
     },
 
-    name            => 'Nephia-Plugin-FillInForm',
-    module_name     => 'Nephia::Plugin::FillInForm',
+    name            => 'PrimalNephia-Plugin-FillInForm',
+    module_name     => 'PrimalNephia::Plugin::FillInForm',
     allow_pureperl => 0,
 
     script_files => [glob('script/*'), glob('bin/*')],

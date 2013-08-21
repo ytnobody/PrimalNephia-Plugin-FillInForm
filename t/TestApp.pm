@@ -2,7 +2,7 @@ package TestApp;
 use strict;
 use warnings;
 use utf8;
-use Nephia plugins => ['FillInForm'];
+use PrimalNephia plugins => ['FillInForm'];
 
 path '/' => sub {
     { template => 'test.html' };
